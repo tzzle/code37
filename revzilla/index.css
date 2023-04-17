@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.search-items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    border: 1px solid black;    
+    position: relative;
+    background: black;
+}
+
+.revzilla {
+    position: absolute;
+    left: 20px;
+    width: 136px;
+}
+
+.search-items-helper-div__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 330px;
+}
+
+.search-items-icon-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 48px;
+    padding: 0 18px;
+    background: #fa4c06;
+    color: white;
+    font-weight: bold;
+}
+
+#search-items-helmet-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.helmet-icon {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#search-items-text-container {
+    display: inline-block;
+}
+
+#search-items-text {
+    display: inline-block;
+    font-family: lato;
+}
+
+#search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    background: white;
+}
+
+span.search-bar-icon {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#search-bar {
+    display: inline-block;
+}
+
+.search-bar-input {
+    display: inline-block;
+    border: none;
+    width: 470px;
+    height: 48px;
+}
+
+.search-bar-input::placeholder {
+    padding-left: 20px;
+}
+
+.profile-and-cart-container {
+    position: absolute;
+    right: 0;
+    width: 294px;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+
+#profile {
+    display: inline-block;
+    margin-left: 170px;
+}
+
+span.profile-icon {
+    font-size: 30px;
+}
+
+#cart {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+span.cart-icon {
+    font-size: 30px;
+}
+
+.nav-items {                              /*style and positon the elements of the second unordered list*/
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #fa4c06;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu-div-container {                     /*contains the menu icon and the menu anchor tag*/
+    position: absolute;
+    left: 20px;
+}
+
+.menu-div {                              /*a helper div to postion the menu icon and menu anchor tag*/
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a:not(.nav-item--cta) {        /*to style the anchor tags within the nav-item list excluding .nav-item--cta*/
+    display: inline-block;
+    padding: 12px;
+    font-family: lato;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover:not(.menu-link) {      /*to add a hover to the list-items excluding the last list item (.menu-link)*/
+    background: #fa4c06;
+}
+
+.nav-item--cta {                         /*to style the last list-item (SALE)*/
+    color: #fa4c06;
+    text-decoration: none;
+    font-family: lato;
+    padding: 12px;
+    display: inline-block;
+}
+
+.nav-item--cta:hover {            
+    background: #fa4c06;
+    color: white;
+}
+
+.common-tread-container {              /*position the common-tread child elements*/
+    position: absolute;
+    right: 0;
+}
+
+.common-tread {                        /*vertically align all elements within the common-tread div*/
+    display: flex;
+    align-items: center;
+    width: 170px;
+    /* height: 48px; */
+}
+
+.common-tread-image {                  /*to place all the elements in the div on the same line*/
+    display: inline-block;
+}
+
+span.common-tread-arrow {
+    display: inline-block;
+    font-weight: bolder;
+}
